@@ -1,0 +1,87 @@
+###########################################################
+##		REPOSITORIO DE LA APLICACION	 	#####
+###########################################################
+https://github.com/IBM/evote		 ##Debo modificar aun..
+
+#	Primero descargar e instalar el VSCODE
+###########################################################
+########## 	INSTALANDO VSCODE 1.39		 ##########
+###########################################################
+descargar https://update.code.visualstudio.com/1.39.2/linux-deb-x64/stable
+sudo apt install ./<file>.deb
+
+
+#Abrir el VSCODE y en una terminar ejecutar lo siguiente
+###########################################################
+##	SOLUCIONANDO PROBLEMA DE COMPATIBILIDAD g++ 	#####
+###########################################################
+alias sudo='sudo env PATH=$PATH'
+sudo apt install build-essential g++ 
+
+
+#	Descargar y ejecutar lo siguiente
+https://gitlab.com/businessblockchainlabs/curso-hyperledgerfabric/-/blob/master/scripts/prerreq.sh
+
+
+#fix docker deamon
+####################################################### 
+#                   FIXING DOCKER                  # 
+####################################################### 
+cd /home
+mkdir $USER/.docker
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+sudo chmod 666 /var/run/docker.sock
+test the fix
+docker run hello-world
+
+
+#En la misma terminal ejecutar..
+###########################################################
+########## 	INSTALANDO PORTAINER		 ##########
+###########################################################
+
+Instalación Portainer
+
+Como os decíamos al principio de este artículo instalar Portainer es muy sencillo ya que funciona en un contenedor de Docker, para ello ejecutaremos:
+
+# docker volume create portainer_data
+# docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
+
+##	Llegando a este punto debes instalar el IBM Blockchain Plattform
+##	que es una extension del VSCODE
+
+##	Desde aqui son aplicaciones opcionales
+###########################################################
+########## 	INSTALANDO CAPTURADOR DE PANTALLA ##########
+###########################################################
+$ sudo apt-get update
+$ sudo apt-get install simplescreenrecorder
+Use the following command if you want to record 32-bit OpenGL applications on your 64-bit system.
+$ sudo apt-get install simplescreenrecorder-lib:i386
+
+###########################################################
+########## 	INSTALANDO ANYDESK		 ##########
+###########################################################
+AnyDesk DEB repository how-to
+
+Run the following commands as root user:
+
+- add repository key to Trusted software providers list
+
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+
+- add the repository:
+
+echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+
+- update apt cache:
+
+apt update
+
+- install anydesk:
+
+apt install anydesk
+
+
