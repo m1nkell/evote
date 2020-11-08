@@ -54,11 +54,11 @@ export default {
       this.chartOptionsBar = {
         xAxis: {
           data: [
-            "Democrat",
-            "Green",
-            "Independent",
-            "Libertarian",
-            "Republican"
+            "Candidato1",
+            "Candidato2",
+            "Candidato3",
+            "Candidato4",
+            "Candidato5"
           ]
         },
         yAxis: {

@@ -5,8 +5,8 @@
         <p><router-link to="/">Inicio</router-link>&nbsp;          
         <!-- <router-link to="/castBallot">Cast Ballot</router-link>&nbsp; -->
         <router-link to="/QueryAll">todos los registros</router-link></p>
-        <router-link to="/queryWithQueryString">Consulta especifica</router-link>&nbsp;
-        <router-link to="/queryByKey">Por llave</router-link>&nbsp;
+<!--         <router-link to="/queryWithQueryString">Consulta especifica</router-link>&nbsp; -->
+<!--         <router-link to="/queryByKey">Por llave</router-link>&nbsp; -->
         <router-link to="/getCurrentStanding">Resultados</router-link>&nbsp;
       
       <router-view></router-view>

@@ -1,26 +1,21 @@
 <template>
   <div class="posts">
-    <h1>Elegir Candidato</h1>
-    <input type="radio" id="one" value="Candidato1" v-model="picked">
-    <label for="one">Donald Trump (Republican)</label>
+    <h1>Elecciones del representante Estudiantil.</h1>
+    <h3>Si ya esta registrado, por favor deposite su Voto</h3>
+    <input type="radio" id="one" value="Republican" v-model="picked">
+    <label for="one">Candidato 1</label>
     <br>
-    <input type="radio" id="two" value="Candidato2" v-model="picked">
-    <label for="two">TBA (Democratic)</label>
+    <input type="radio" id="two" value="Democrat" v-model="picked">
+    <label for="two">Candidato 2</label>
     <br>
-    <input type="radio" id="two" value="Candidato3" v-model="picked">
-    <label for="two">TBA (Green Party)</label>
-    <br>
-    <input type="radio" id="two" value="Candidato4" v-model="picked">
-    <label for="two">TBA (Independent)</label>
-    <br>
-    <input type="radio" id="two" value="Candidato5" v-model="picked">
-    <label for="two">TBA (Libertarian)</label>
+    <input type="radio" id="two" value="Independent" v-model="picked">
+    <label for="two">Candidato 3</label>
     <br>
     <br>
-    <span v-if="picked">
+<!--     <span v-if="picked">
       Picked:
       <b>{{ picked }}</b>
-    </span>
+    </span> -->
     <br>
     <br>
     <!--span><b>{{ response }}</b></span><br /-->
