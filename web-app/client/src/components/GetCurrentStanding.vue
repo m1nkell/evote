@@ -1,8 +1,8 @@
 <template>
   <div class="posts">
-    <h1>Get the Current Poll Standings</h1>
+    <h1>Conteo en tiempo Real</h1>
 
-    <button v-on:click="getCurrentStanding()">Check Poll</button>
+    <button v-on:click="getCurrentStanding()">Pulse para mostrar</button>
 
     <br>
     <span v-if="response">
@@ -54,11 +54,8 @@ export default {
       this.chartOptionsBar = {
         xAxis: {
           data: [
-            "Candidato1",
-            "Candidato2",
-            "Candidato3",
-            "Candidato4",
-            "Candidato5"
+            "Gustavo Haitter",
+            "Candidato2"
           ]
         },
         yAxis: {

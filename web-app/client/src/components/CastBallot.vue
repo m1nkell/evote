@@ -2,14 +2,11 @@
   <div class="posts">
     <h1>Elecciones del representante Estudiantil.</h1>
     <h3>Si ya esta registrado, por favor deposite su Voto</h3>
-    <input type="radio" id="one" value="Republican" v-model="picked">
-    <label for="one">Candidato 1</label>
+    <input type="radio" id="one" value="Democrat" v-model="picked">
+    <label for="one">Gustavo Haitter</label>
     <br>
-    <input type="radio" id="two" value="Democrat" v-model="picked">
+    <input type="radio" id="two" value="Green" v-model="picked">
     <label for="two">Candidato 2</label>
-    <br>
-    <input type="radio" id="two" value="Independent" v-model="picked">
-    <label for="two">Candidato 3</label>
     <br>
     <br>
 <!--     <span v-if="picked">
