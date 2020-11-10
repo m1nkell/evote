@@ -1,9 +1,9 @@
 <template>
   <div class="posts">
     <h1>Elecciones del representante Estudiantil.</h1>
-    <h3>Si ya esta registrado, por favor deposite su Voto</h3>
+<!--     <h3>Si ya esta registrado, por favor deposite su Voto</h3>
     <!--span><b>{{ response }}</b></span><br /-->
-    <form v-on:submit="validateVoter">
+<!--     <form v-on:submit="validateVoter">
       <input type="text" v-model="loginData.voterId" placeholder="Ingrese su CI">
       <br>
 
@@ -14,14 +14,14 @@
         <b>{{ loginReponse.data }}</b>
       </span>
       <br>
-    </form>
+    </form> --> 
 
     <br>
-    <h3>Si no esta registrado, puedes registrarte!</h3>
+    <h3>Registro de Electores</h3>
     <form v-on:submit="registerVoter">
       <input type="text" v-model="registerData.voterId" placeholder="Numero de CI">
       <br>
-      <input type="text" v-model="registerData.registrarId" placeholder="Numero de CI">
+      <input type="text" v-model="registerData.registrarId" placeholder="Reingrese numero de CI">
       <br>
       <input type="text" v-model="registerData.firstName" placeholder="Nombres">
       <br>

@@ -55,7 +55,8 @@ export default {
         xAxis: {
           data: [
             "Gustavo Haitter",
-            "Candidato2"
+            "Hugo Vento",
+            "Guadalupe Appleyard"
           ]
         },
         yAxis: {

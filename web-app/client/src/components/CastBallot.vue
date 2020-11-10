@@ -3,10 +3,13 @@
     <h1>Elecciones del representante Estudiantil.</h1>
     <h3>Si ya esta registrado, por favor deposite su Voto</h3>
     <input type="radio" id="one" value="Democrat" v-model="picked">
-    <label for="one">Gustavo Haitter</label>
+    <label for="one">Gustavo Haitter (Ingenieria Eléctrica)</label>
     <br>
     <input type="radio" id="two" value="Green" v-model="picked">
-    <label for="two">Candidato 2</label>
+    <label for="two">Hugo Vento (Ingenieria Eléctrica)</label>
+    <br>
+    <input type="radio" id="three" value="Independent" v-model="picked">
+    <label for="three">Guadalupe Appleyard (Lic. Análisis de Sistemas)</label>
     <br>
     <br>
 <!--     <span v-if="picked">
@@ -19,7 +22,7 @@
     <form v-on:submit="castBallot">
       <!-- <input type="text" value="2sww593dc034wb2twdk91r" v-model="input.electionId"  >
       <br>-->
-      <input type="text" v-model="input.voterId" placeholder="Enter VoterId">
+      <input type="text" v-model="input.voterId" placeholder="Ingrese su CI">
       <br>
       <input type="submit" value="Depositar Voto">
       <br>
@@ -70,14 +73,14 @@ export default {
       if (this.picked === null ) {
         console.log('this.picked === null')
 
-        let response = "You have to pick a party to vote for!";
+        let response = "Debe elegir un candidato!";
         this.response = response;
         await this.hideSpinner();
       
       } else if (this.input.voterId === undefined) {
         console.log('this.voterId === undefined')
 
-        let response = "You have to enter your voterId to cast a vote!";
+        let response = "Necesita ingresar CI para votar!";
         this.response = response;
         await this.hideSpinner();
 
@@ -101,9 +104,7 @@ export default {
           await this.hideSpinner();
         } 
         else {
-          let response = `Successfully recorded vote for ${this.picked} party 
-            for voter with voterId ${apiResponse.data.voterId}. Thanks for 
-            doing your part and voting!`;
+          let response = `Voto Realizado. Gracias por cumplir su compromiso!`;
 
           this.response = response;
 

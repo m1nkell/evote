@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo_fpune.png">    
+    <img alt="FPUNE logo" src="./assets/logo_fpune.png">    
       
         <p><router-link to="/">Inicio</router-link>&nbsp;</p>           
         <!-- <router-link to="/castBallot">Cast Ballot</router-link>&nbsp; -->
