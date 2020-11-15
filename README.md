@@ -21,7 +21,7 @@ this is how the extension builds a development Hyperledger Fabric network with a
 
 Git clone this repo onto your computer in the destination of your choice, then go into the web-app folder:
 ```
-HoreaPorutiu$ git clone https://github.com/IBM/evote
+git clone https://github.com/m1nkell/evote.git
 ```
 
 ## Step 2. Start the Fabric Runtime
